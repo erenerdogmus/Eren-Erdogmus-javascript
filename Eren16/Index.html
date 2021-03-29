@@ -1,0 +1,309 @@
+﻿<html>
+<head>
+   
+    <title>Kombinasyon Projesi</title>
+
+    <style>
+
+        .apartman {
+            width: 350px;
+            height: auto;
+            margin: 70px auto;
+        }
+
+        .baca {
+            width: 25px;
+            height: 50px;
+            background-color: #960;
+            margin: 100px 0px 0px 765px;
+        }
+
+        .catý {
+            width: 250px;
+            height: 250px;
+            background-color: #930;
+            transform: rotate(45deg);
+            margin: 0px 0px 0px 550px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .gövde {
+            width: 330px;
+            height: 470px;
+            background-color: #0cf;
+            margin: -125px 0px 0px 500px;
+            z-index: 2;
+            position: relative;
+            padding: 0px 0px 0px 20px;
+        }
+
+        .p1 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .p2 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 65px;
+        }
+
+        .p3 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .p4 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 65px;
+        }
+
+        .p5 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .p6 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 65px;
+        }
+
+        .p7 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .p8 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 65px;
+        }
+
+        .p9 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .p10 {
+            width: 120px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 15px 65px;
+        }
+
+        .p12 {
+            width: 58px;
+            height: 50px;
+            background: #ff9;
+            border: 1px solid black;
+            float: left;
+            margin: 0px 0px 0px 48px;
+        }
+
+        .kapýtabela {
+            width: 90px;
+            height: 152px;
+            float: left;
+            margin: -11px 0 0 108px;
+        }
+
+        .tabela {
+            width: 88px;
+            height: 25px;
+            background-color: white;
+            border: 1px solid black;
+            font: bold 11px tahoma;
+            text-align: center;
+        }
+
+        .kapý {
+            width: 86px;
+            height: 112px;
+            background-color: #330;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-top: 2px solid black;
+            margin: 5px 0 0 0;
+        }
+
+        .kapýkolu {
+            width: 15px;
+            height: 3px;
+            background-color: yellow;
+            margin: 56px 0 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+  
+
+
+
+    
+
+    <script type="text/javascript">
+      
+        var isim = window.prompt("En az 1 rakam, 1 büyük harf, 1 küçük harf ve fazla 9 karakter içermelidir" ," Bir Karakter Giriniz");
+        var deger = isim
+            deger = deger.length;
+            if (deger < 1) {
+                document.write("Max 9 krakter Minimum 1 krakter");
+            
+            }
+            if (deger > 9) {
+                $("#Girdi").val($("#Girdi").val().substring(0, 9))
+                document.write("Max 9 krakter Minimum 1 krakter");
+               
+            }
+            var kontrolS = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/i);
+        if (kontrolS.test(isim) == false) {
+            document.write("En az 1 rakam, 1 büyük harf, 1 küçük harf ve en fazla 9 karakter içermelidir ");
+                
+        }
+        else {
+                
+       
+        var deger1 = "";
+        var deger2 = "";
+        var deger3= "";
+        var deger4 = "";
+        var deger5 = "";
+        var deger6 = "";
+        var deger7 = "";
+        var deger8 = "";
+        var deger9 = "";
+            for (var i = 0; i < deger; i++) {
+                if (i == 0) {
+                    var dd = isim.charAt(Math.floor(Math.random() * deger));
+                    deger1 = "1.Karakter " + dd + "</br>";
+
+                }
+                else {
+                    var krakter = "";
+                    for (var ii = 0; ii <= i; ii++) {
+                        krakter = krakter + isim.charAt(Math.floor(Math.random() * deger));
+                    }
+                    var sayi = i;
+
+
+                    if (sayi == 2) {
+                        deger2 = sayi + ".Krakter " + krakter + "</br>";;
+                    }
+                    if (sayi == 3) {
+                        deger3 = sayi + ".Krakter " + krakter + "</br>";;
+                    } if (sayi == 4) {
+                        deger4 = sayi + ".Krakter " + krakter + "</br>";;
+                    }
+                    if (sayi == 5) {
+                        deger5 = sayi + ".Krakter " + krakter + "</br>";;
+                    }
+                    if (sayi == 6) {
+                        deger6 = sayi + ".Krakter " + krakter + "</br>";;
+                    }
+                    if (sayi == 7) {
+                        deger7 = sayi + ".Krakter " + krakter + "</br>";;
+                    }
+                    if (sayi == 8) {
+                        deger8 = sayi + ".Krakter " + krakter + "</br>";;
+                    }
+                    if (sayi == 9) {
+                        deger9 = sayi + ".Krakter " + krakter + "</br>";;
+                    }
+                }
+            }
+                var temp = '<div class="apartman">';
+
+                temp = '<div class="baca"></div>';
+                temp += '<div class="catý">';
+                temp += '</div >';
+                temp += ' <div class="gövde">';
+
+                temp += ' <div class="p1">';
+                temp += deger1;
+                temp += '</div>';
+                temp += '<div class="p2">';
+                temp += deger2;
+                temp += '</div>';
+                temp += ' <div class="p3">';
+                temp += deger3;
+                temp += ' </div>';
+
+                temp += '<div class="p4">';
+                temp += deger4;
+                temp += '</div>';
+                temp += '<div class="p5">';
+                temp += deger5;
+                temp += '</div>';
+                temp += ' <div class="p6">';
+                temp += deger6;
+                temp += ' </div>';
+
+                temp += ' <div class="p7">';
+                temp += deger7;
+                temp += ' </div>';
+                temp += ' <div class="p8">';
+                temp += deger8;
+                temp += '</div>';
+                temp += ' <div class="p9">';
+                temp += deger9;
+                temp += '</div>';
+
+                temp += ' <div class="p10">';
+
+                temp += '</div>';
+
+                temp += '<div class="kapýtabela">';
+                temp += ' <div class="tabela">EREN ERDOĞMUŞ</div>';
+                temp += '<div class="kapý">';
+                temp += '<div class="kapýkolu"></div>';
+                temp += ' </div>';
+
+                temp += ' </div>';
+
+                temp += '</div>';
+                temp += '</div>';
+                document.write(temp);
+            
+        }
+    </script>
+</body>
+</html>
